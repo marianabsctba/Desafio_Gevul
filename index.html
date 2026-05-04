@@ -92,7 +92,7 @@ function renderCert(passed,pct,name){
   const cleanName=esc(name||'Participante');
   cert.style.display='block';
   cert.setAttribute('data-ready','true');
-  cert.innerHTML=`<div class="ribbon">CERTIFICADO DESBLOQUEADO</div><h2>Certificado</h2><p>Certificamos que</p><div class="name">${cleanName}</div><p>concluiu com aproveitamento o <b>Desafio Avançado de Gestão de Vulnerabilidades</b>, aplicando priorização por risco, exploração ativa, impacto de negócio e movimento lateral.</p><p><b>Score final:</b> ${pct.toFixed(1)}%</p><p style="margin-top:28px"><b>Mariana BS — Instrutora</b></p>`;
+  cert.innerHTML=`<div class="ribbon">MARIANA BS - BE SAFE</div><h2>Certificado</h2><p>Certificamos que</p><div class="name">${cleanName}</div><p>concluiu com aproveitamento o <b>Desafio Avançado de Gestão de Vulnerabilidades</b>, aplicando priorização por risco, exploração ativa, impacto de negócio e movimento lateral.</p><p><b>Score final:</b> ${pct.toFixed(1)}%</p><p style="margin-top:28px"><b>Mariana BS — Instrutora</b></p>`;
   if(actions) actions.style.display='block';
   cert.scrollIntoView({behavior:'smooth',block:'center'});
 }
